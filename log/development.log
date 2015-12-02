@@ -47,3 +47,11 @@ Migrating to AddPersonIdToTheses (20151202122824)
             FROM sqlite_temp_master
             WHERE name='index_theses_on_faculty_id' AND type='index'
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-02 15:01:58 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ThesesController#index as HTML
+  [1m[35mThesis Load (0.2ms)[0m  SELECT "theses".* FROM "theses"
+  Rendered theses/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 836ms (Views: 815.4ms | ActiveRecord: 0.6ms)
