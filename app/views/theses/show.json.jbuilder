@@ -1,1 +1,1 @@
-json.extract! @thesis, :id, :title, :abstract, :defended, :created_at, :updated_at
+json.extract! @thesis, :id, :title, :abstract, :person ,:defended, :created_at, :updated_at

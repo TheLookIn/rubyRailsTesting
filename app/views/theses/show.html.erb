@@ -11,6 +11,11 @@
 </p>
 
 <p>
+  <strong>Author:</strong>
+  <%= @thesis.person.try!(:username) %>
+</p>
+
+<p>
   <strong>Defended:</strong>
   <%= @thesis.defended %>
 </p>
